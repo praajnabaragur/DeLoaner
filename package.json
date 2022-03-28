@@ -1,0 +1,16 @@
+{
+  "name": "my-terra-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@iboss/terrain": "0.0.8",
+    "@mui/material": "^5.5.2"
+  },
+  "workspaces": [
+    "frontend"
+  ],
+  "author": "",
+  "license": "ISC"
+}

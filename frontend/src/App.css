@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+
+   
+/* Spinning Cube Code Starts */
+
+.cube {
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 40s infinite linear;
+  position: relative;
+  width: var(--cube-len);
+  height: var(--cube-len);
+  top: 50%;
+  left: 50%;
+  margin-left: var(--cube-margin-left);
+  margin-top: var(--cube-margin-top);
+}
+
+.cube div {
+  width: var(--cube-len);
+  height: var(--cube-len);
+  line-height: var(--cube-len);
+  text-align: center;
+  box-shadow: inset 0px 0px 0px 1px rgba(10, 0, 0, 0.8);
+  display: block;
+  position: absolute;
+  font-size: 3rem;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.cube div.top {
+  -webkit-transform: rotateX(90deg);
+  margin-top: var(--cube-neg-half-len);
+  background: rgba(2, 136, 209, 0.9);
+}
+
+.cube div.right {
+  -webkit-transform: rotateY(90deg);
+  margin-left: var(--cube-half-len);
+  background: rgba(156, 204, 101, 0.9);
+}
+
+.cube div.bottom {
+  -webkit-transform: rotateX(-90deg);
+  margin-top: var(--cube-half-len);
+  background: rgba(2, 136, 209, 0.9);
+}
+
+.cube div.left {
+  -webkit-transform: rotateY(-90deg);
+  margin-left: var(--cube-neg-half-len);
+}
+
+.cube div.front {
+  -webkit-transform: translateZ(125px);
+  background: rgba(255, 167, 38, 0.9);
+}
+
+.cube div.back {
+  -webkit-transform: translateZ(-125px) rotateY(180deg);
+  background: rgba(236, 64, 122, 0.9);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateX(-20deg) rotateY(20deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-20deg) rotateY(740deg);
+  }
+}
+/* Spinning Cube Code Ends */
+
+/* Home Page Background Starts */
+.backgroundgradient {
+  background-image: linear-gradient(to right, #ffa726, #29b6f6);
+}

@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/chaitanyasharma/projects/DAAPP/contracts/counter/target/debug/build/typenum-17ab3cb7f16b9a52/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/chaitanyasharma/projects/DAAPP/contracts/counter/target/debug/build/typenum-17ab3cb7f16b9a52/out/op.rs
